@@ -1,4 +1,5 @@
 :root {
+
     /* cores de letras */
     --letra-input-texto: #0A3871;
     --letra-informacao: #67808E;
@@ -6,18 +7,16 @@
     --letra-btn-desencriptar: #0A3871;
     --letra-nenhumaMengs: #343A40;
     --letra-mensagem: #495057;
+
     /* cores de fundo */
-    --fundo-body: #E5E5E5;
+    --fundo-body: #F3F5FC;
     --fundo-mensagem-box: #E5E5E5;
     --fundo-btn-encriptar: darkblue;
     --fundo-btn-desencriptar: #E5E5E5;
     --fundo-btn-copiar: #E5E5E5;
 
 
-
-
-    
-    }
+}
 
 *{
     box-sizing: border-box;
@@ -28,22 +27,41 @@
 }
 
 body {
-    background: #F3F5FC;
-}
-
-header {
-    margin-left: 40px;
-}
-main {
-    /* display: flex; */
-    margin-left: 80px;
-    margin-bottom: 50px;
+    background: var(--fundo-body);
 }
 
 .input-texto {
     margin-top: 90px;
+    background-color: var(--fundo-body);
+    border: none;
+    resize: none;
+    overflow-y: auto;
+}
+.input-texto::placeholder {
+    color: var(--letra-input-texto);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.informacao{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
 }
 
+.botoes .encriptar, .desencriptar{
+    height: 67px;
+    width: 343px;
+    left: 0px;
+    top: 0px;
+    border-radius: 24px;
+    /* padding: 24px; */
+
+}
 .mensagem {
     background-image: url(/images/cripto_image.svg);
     background-repeat: no-repeat;
@@ -54,6 +72,38 @@ main {
 #div-aparece {
     display: none;
 }
-@media (min-width: 576px) { 
-    
+
+@media (max-width: 576px) { 
+
+   /*  header img {
+        position: absolute;
+        height: 48px;
+        width: 32px;
+        left: 16px;
+        top: 24px;
+        border-radius: 0px;
+    }
+    .input-texto {
+        position: absolute;
+        width: 343px;
+        height: 48px;
+        left: 16px;
+        top: 152px;
+   
+
+    }
+    .informacao img {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    }
+    .informacao{
+        height: 18px;
+        width: 228px;
+        left: 24px;
+        top: 0px;
+    } */
 }
+
