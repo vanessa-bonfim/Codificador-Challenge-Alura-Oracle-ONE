@@ -14,13 +14,13 @@
 
 <body>
     <header>
-        <img src="/images/Vector.svg" alt="Logomarca da Alura">
+        <img src="images/logoAlura.svg" alt="Logomarca da Alura">
     </header>
     <main>
         <section>
             <textarea class="input-texto" cols="18" rows="8" placeholder="Digite seu texto"></textarea>
             <div>
-                <h6 class="informacao"> Apenas letras minúsculas e sem acento.</h6>
+                <h6 class="informacao"> <img src="images/exclamationMark.svg" alt=""> Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="botoes">
                 <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
@@ -29,12 +29,10 @@
         </section>
 
         <section class="mensagem-box">
-            <img class="mensagem" src="images/High quality products 1 1.svg" alt="">
-            <p>Nenhum mensagem</p>
-            <textarea cols="18" rows="8"
-                placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <p class="nenhumaMensg">Nenhum mensagem</p>
+            <textarea class="mensagem" cols="18" rows="8" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
             <div id="div-aparece">
-                <button onclick="copiar()">Copiar</button>
+                <button class="btn-copia" onclick="copiar()">Copiar</button>
             </div>
         </section>
     </main>
@@ -42,7 +40,6 @@
         <p>Decodificador Alura - Programa ONE - Vanessa Bonfim</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script>  
 </body>
-
 </html>

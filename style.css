@@ -1,14 +1,59 @@
+:root {
+    /* cores de letras */
+    --letra-input-texto: #0A3871;
+    --letra-informacao: #67808E;
+    --letra-btn-encriptar: #FFFFFF;
+    --letra-btn-desencriptar: #0A3871;
+    --letra-nenhumaMengs: #343A40;
+    --letra-mensagem: #495057;
+    /* cores de fundo */
+    --fundo-body: #E5E5E5;
+    --fundo-mensagem-box: #E5E5E5;
+    --fundo-btn-encriptar: darkblue;
+    --fundo-btn-desencriptar: #E5E5E5;
+    --fundo-btn-copiar: #E5E5E5;
+
+
+
+
+    
+    }
+
 *{
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 400;
-    
+    line-height: 150%;
 }
-
 
 body {
     background: #F3F5FC;
 }
+
+header {
+    margin-left: 40px;
+}
 main {
-display: flex;
+    /* display: flex; */
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.input-texto {
+    margin-top: 90px;
+}
+
+.mensagem {
+    background-image: url(/images/cripto_image.svg);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+}
+
+#div-aparece {
+    display: none;
+}
+@media (min-width: 576px) { 
+    
 }
